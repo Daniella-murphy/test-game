@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bear, Ninja, Hunter Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bear Ninja Hunter Game</h1>
+    <div>
+        <p id="display"></p>
+        <script type="text/javascript">
+            // Present a text field to gather user input.
+            let playerName = prompt("Welcome to the Bear, Ninja, Hunter Game! Please enter your name:");
+
+            // Store the user's input into a variable.
+            let message = "Welcome " + playerName + "! Get ready to play!";
+
+            // Put together a message for the players that combines text and the values of the variable.
+            // Output the concatenated strings using two (2) different output methods.
+            document.getElementById("display").textContent = message;
+            console.log(message);
+        </script>
+    </div>
+</body>
+</html>
